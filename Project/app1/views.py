@@ -8,6 +8,10 @@ def home(request):
         ('/learn_docxtpl/add_text/', 'Add Text'),
         ('/learn_docxtpl/add_paragraph/', 'Add Paragraph'),
         ('/learn_docxtpl/django_model_data_to_docx/', 'Django Model Data to Docx'),
+        ('/learn_docxtpl/django_model_data_to_docx_table/', 'Django Model Data to Docx Table'),
+        ('/learn_docxtpl/django_model_data_to_docx_table_with_image/', 'Django Model Data to Docx Table With Image'),
+        ('/learn_docxtpl/onerow2images/', 'One Row 2 Images'),
+        ('/learn_docxtpl/onerow2images_html/', 'One Row 2 Images HTML'),
         # Uncomment or add more as you add more endpoints
         # ('/learn_docxtpl/add_paragraph/', 'Add Paragraph'),
         # ('/learn_docxtpl/add_footer/', 'Add Footer'),

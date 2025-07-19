@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Images</title>
+    <style>
+        .row {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .col-md-6 {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .col-md-6 img {
+            max-width: 100%;
+            height: auto;
+        }
+        .book-info {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Book Images - 2 per row</h1>
+    <p>Total Images: {{ total_images }}</p>
+    
+    {% for row in book_images_rows %}
+        <div class="row">
+            {% for image in row %}
+                <div class="col-md-6">
+                    <img src="{{ image.image_url }}" alt="Book Image">
+                    <div class="book-info">
+                        Book: {{ image.book_title }} (ID: {{ image.book_id }})
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</body>
+</html>
